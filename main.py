@@ -7,7 +7,7 @@ app.register_blueprint(views, url_prefix="/views")
 
 if __name__ == '__main__':
     app.run(debug=True, port=8000)
-    
+
 # Beginner: I’m just starting to learn tennis
 # Intermediate: I used to play tennis or started playing recently and want to keep improving
 # Advanced: I play regularly and control shots with placement, spin, and power

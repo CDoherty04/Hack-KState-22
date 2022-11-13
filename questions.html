@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Racquet Matcher</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style2 spotlights">
+						<div class="inner">
+							<h1 id="question-counter">Question 1</h1>
+							<p id="question">What is your maximum budget?</p>
+							<ul class="actions">
+								<li>
+									<form>
+										<label for="user-input">Input Dollar Value:</label>
+										<input type="text" id="input-field" onkeypress="$(document).keypress(function(e){if(e.keyCode === 13) { e.preventDefault(); return false;}});"><br><br>
+										<input type="button" value="Next Question" onclick="next_question();"></input>
+										<!-- <script>
+											$(document).keypress(function(e) { if(e.keyCode === 13) { e.preventDefault(); return false; } });
+										</script> -->
+									</form>
+								</li>
+								<ul>
+									<img src="https://i.pinimg.com/originals/d2/13/bd/d213bd0985db0df77cd87872689b3025.png" width="100%" height="100%">
+								</ul>
+							</ul>
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Racquet Matcher. All rights reserved.</li><li>Design: Charlie Doherty </li><li><a href="http://charliedoherty.com">Personal Website</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/myscript.js"></script>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Racquet Matcher</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <script>
+        function getContent() {
+            var content = getSequence();
+            console.log(content);
+            document.getElementById("result").innerText = "You should consider buying the " + content[0] + "!";
+            document.getElementById("link").innerText = content[1];
+            document.getElementById("link").href = content[1];
+            document.getElementById("picture").src = content[2];
+        }
+        window.onload = getContent;
+    </script>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <section class="wrapper style1 fade-up">
+            <div class="inner">
+                <h1>The Results!</h1></br>
+                <h2 id="result"></h2></br></br></br>
+                <a id="link"></a></br></br></br></br></br></br>
+                <!-- <img id="picture"></img> -->
+                <ul class="actions">
+                    <li>
+                        <input type="button" value="Re-Match?" onclick="balls()"></input>
+                        <script>
+                            function balls() {
+                                window.location.href ="index.html";
+                            }
+                        </script>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; Racquet Matcher. All rights reserved.</li>
+                <li>Design: Charlie Doherty </li>
+                <li><a href="http://charliedoherty.com">Personal Website</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/myscript.js"></script>
+</body>
+
+</html>
